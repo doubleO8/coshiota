@@ -1,0 +1,38 @@
+[tool.black]
+line-length = 79
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      __pycache__
+    | \.idea
+    | \.vscode
+    | build
+    | contrib
+    | dist
+    | doc
+    | iotta\.egg\-info
+    | \.?venv3?
+  )/
+)
+'''
+
+[tool.poetry]
+name = "coshiota"
+version = "0.0.1"
+description = ""
+authors = ["doubleO8 <wb008@hdm-stuttgart.de>"]
+license = "GPL2"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+pendulum = "^2.1.2"
+orjson = "^3.6.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
