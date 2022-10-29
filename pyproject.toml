@@ -20,15 +20,16 @@ exclude = '''
 
 [tool.poetry]
 name = "coshiota"
-version = "0.0.2"
+version = "0.0.3"
 description = ""
 authors = ["doubleO8 <wb008@hdm-stuttgart.de>"]
 license = "GPL2"
 
 [tool.poetry.dependencies]
-python = "^3.6.2"
+python = "^3.7.3"
 pendulum = "^2.1.2"
-orjson = "^3.6.1"
+orjson = "^3.7.12"
+cryptography = ">=3.2"
 
 [tool.poetry.dev-dependencies]
 black = "^21.5b1"
