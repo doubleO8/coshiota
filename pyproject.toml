@@ -20,7 +20,7 @@ exclude = '''
 
 [tool.poetry]
 name = "coshiota"
-version = "0.0.3"
+version = "0.0.5"
 description = ""
 authors = ["doubleO8 <wb008@hdm-stuttgart.de>"]
 license = "GPL2"
