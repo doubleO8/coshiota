@@ -51,6 +51,20 @@ def dump_json(data, uselog=None, level=logging.INFO):
     ).split(b"\n"):
         uselog.log(level, line.decode("utf-8"))
 
+def dump_json_to_stdout(data):
+    """
+    Dump ``data`` in JSON format to STDOUT
+
+    Args:
+        data: data
+
+    """
+    for line in orjson.dumps(
+        data,
+        option=orjson.OPT_INDENT_2 | orjson.OPT_APPEND_NEWLINE,
+    ).split(b"\n"):
+        print(line.decode("utf-8"))
+
 
 def load_json(path):
     """
