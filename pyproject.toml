@@ -20,19 +20,20 @@ exclude = '''
 
 [tool.poetry]
 name = "coshiota"
-version = "0.0.7"
+version = "0.1.0"
 description = ""
 authors = ["doubleO8 <wb008@hdm-stuttgart.de>"]
 license = "GPL2"
 
 [tool.poetry.dependencies]
-python = "^3.7.3"
-pendulum = "^2.1.2"
-orjson = "^3.7.12"
-cryptography = ">=3.2"
+python = ">=3.8,<=3.12"
+pendulum = "^2.1"
+orjson = "^3.9.10"
+cryptography = ">=38.0.1"
+pydantic = "^1.10"
 
 [tool.poetry.dev-dependencies]
-black = "^21.5b1"
+black = ">=22.3.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
