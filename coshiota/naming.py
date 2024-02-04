@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 def cfapp_base_url(value, env_name=None, **kwargs):
     """
-    
+
     >>> cfapp_base_url("crap")
     'https://crap.cfapps.eu10.hana.ondemand.com'
     >>> cfapp_base_url("crap", env_name="prod")
@@ -13,10 +13,9 @@ def cfapp_base_url(value, env_name=None, **kwargs):
     'https://dev-crap.cfapps.eu10.hana.ondemand.com'
     """
     return "https://{hostname}.cfapps.eu10.hana.ondemand.com".format(
-                hostname=environment_specific_name(
-                    value, env_name=env_name, **kwargs
-                )
-            )
+        hostname=environment_specific_name(value, env_name=env_name, **kwargs)
+    )
+
 
 def environment_specific_name(value, env_name=None, **kwargs):
     """

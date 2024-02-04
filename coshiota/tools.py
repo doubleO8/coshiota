@@ -51,6 +51,7 @@ def dump_json(data, uselog=None, level=logging.INFO):
     ).split(b"\n"):
         uselog.log(level, line.decode("utf-8"))
 
+
 def dump_json_to_stdout(data):
     """
     Dump ``data`` in JSON format to STDOUT
